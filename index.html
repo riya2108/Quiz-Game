@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container" id="quizContainer">
+    <h1>Web Development Quiz</h1>
+    <div class="timer" id="timer">Time left: 10s</div>
+    <div class="question" id="question">Loading question...</div>
+    <div class="options">
+      <button onclick="checkAnswer(0)" id="option1">Option 1</button>
+      <button onclick="checkAnswer(1)" id="option2">Option 2</button>
+      <button onclick="checkAnswer(2)" id="option3">Option 3</button>
+      <button onclick="checkAnswer(3)" id="option4">Option 4</button>
+    </div>
+    <div class="score" id="score"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
